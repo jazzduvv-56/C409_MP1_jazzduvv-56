@@ -1,13 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmitha Duvvuru - Data Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Jasmitha Duvvuru</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-progress">
+                <div class="nav-progress-bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm Jasmitha Duvvuru</h1>
+                    <h2 class="hero-subtitle">Data Engineer</h2>
+                    <p class="hero-description">
+                        Results-oriented Data Engineer with 3+ years of experience building and optimizing data pipelines for healthcare systems serving millions. Proven ability to clean and model data (SQL, Python), build dashboards (Power BI), and improve system performance by 30–40% through automation and root-cause analysis. Collaborative and detail-focused, I thrive at translating messy datasets into clear insights to support decision-making.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/Profile_Pic.jpg" alt="Jasmitha Duvvuru" class="profile-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-card-header">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>My Career</h3>
+                    </div>
+                    <p>
+                        Throughout my career, I've had the privilege of working with healthcare systems that serve millions of patients, where data accuracy and system reliability are paramount. I take pride in my ability to improve system performance significantly while maintaining the highest standards of data integrity.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-header">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>My Passion</h3>
+                    </div>
+                    <p>
+                        When I'm not diving deep into data pipelines or crafting SQL queries, I enjoy exploring the intersection of technology and creativity. I believe that the best data solutions come from understanding both the technical requirements and the human stories behind the numbers.
+                    </p>
+                </div>
+                <div class="about-interests">
+                    <h3>What I Enjoy</h3>
+                    <ul class="interests-list">
+                        <li><i class="fas fa-palette"></i> Art </li>
+                        <li><i class="fas fa-film"></i> Movies </li>
+                        <li><i class="fas fa-star"></i> Astronomy </li>
+                        <li><i class="fas fa-chart-bar"></i> Analysis </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-slide current-slide">
+                                <div class="project-card">
+                                    <img src="./assets/project1.jpg" alt="Chicago City Crime Analysis" class="project-image">
+                                    <div class="project-content">
+                                        <h3 class="project-title">Chicago City Crime Analysis</h3>
+                                        <p class="project-description">Comprehensive analysis of Chicago crime data with interactive dashboards and predictive insights.</p>
+                                        <button class="btn btn-primary project-btn" data-modal="modal1">View Project</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="project-card">
+                                    <img src="./assets/project2.jpg" alt="S&P 500 Prediction" class="project-image">
+                                    <div class="project-content">
+                                        <h3 class="project-title">S&P 500 Prediction</h3>
+                                        <p class="project-description">Machine learning models for predicting S&P 500 stock market trends using historical data.</p>
+                                        <button class="btn btn-primary project-btn" data-modal="modal2">View Project</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="project-card">
+                                    <img src="./assets/project3.jpg" alt="Payment and Compliance Management System" class="project-image">
+                                    <div class="project-content">
+                                        <h3 class="project-title">Payment and Compliance Management System</h3>
+                                        <p class="project-description">SQL-based system for managing payments and ensuring compliance in healthcare organizations.</p>
+                                        <button class="btn btn-primary project-btn" data-modal="modal3">View Project</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-btn carousel-btn--left"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn carousel-btn--right"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-video-background">
+            <video autoplay muted loop>
+                <source src="./assets/BGvideo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="skills-overlay"></div>
+        <div class="skills-container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Libraries & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Numpy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Databases & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft SQL Server</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MS Excel</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">MS Office</span>
+                        <span class="skill-tag">AWS SageMaker</span>
+                        <span class="skill-tag">Microsoft Visual Studio</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">SoapUI</span>
+                        <span class="skill-tag">Dynatrace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-multi-column">
+                <p><i class="fas fa-envelope"></i> Reach out via <a href="mailto:jd56@illinois.edu">jd56@illinois.edu</a> for professional inquiries and project discussions.</p>
+                <p><i class="fab fa-github"></i> Check out my <a href="https://github.com/jazzduvv-56" target="_blank">GitHub</a> to explore my latest projects and open-source contributions.</p>
+                <p><i class="fab fa-linkedin"></i> Connect with me on <a href="https://www.linkedin.com/in/duvvurujasmitha/" target="_blank">LinkedIn</a> for professional networking and industry updates.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Jasmitha Duvvuru. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/jazzduvv-56" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/duvvurujasmitha/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Chicago City Crime Analysis</h3>
+            <p>This project involves comprehensive analysis of Chicago crime data, featuring interactive dashboards and predictive insights to help understand crime patterns and trends.</p>
+            <a href="https://github.com/jazzduvv-56/dashboard_chicagocrime" target="_blank" class="btn btn-primary">View on GitHub</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>S&P 500 Prediction</h3>
+            <p>Machine learning project focused on predicting S&P 500 stock market trends using historical data and various predictive models.</p>
+            <a href="https://github.com/jazzduvv-56/predictions" target="_blank" class="btn btn-primary">View on GitHub</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Payment and Compliance Management System</h3>
+            <p>SQL-based system designed for managing payments and ensuring compliance in healthcare organizations with robust database design.</p>
+            <a href="https://github.com/jazzduvv-56/sqldatabases" target="_blank" class="btn btn-primary">View on GitHub</a>
+        </div>
+    </div>
+</body>
 </html>
